@@ -21,7 +21,7 @@ function onInput(evt) {
   fetchCountries(evt.target.value.trim())
     .then(onFetch)
     .catch(err => {
-      Notify.failure('Oops, there is no country with that name');
+      Notify.failure('Oops, there is no country with that name.');
       console.error(err);
     });
 }
